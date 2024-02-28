@@ -1,14 +1,15 @@
-package com.loanservice.loanservice.controller;
+package com.loanservice.loanservice.model;
 
 import jakarta.persistence.*;
 
 @Entity
-public class loanRequest {
+@Table(name = "loan_requests")
+public class LoanRequest {
 
-    public loanRequest() {
+    public LoanRequest() {
     }
 
-    public loanRequest(Long id, String borrower, double amount) {
+    public LoanRequest(Long id, String borrower, double amount) {
         this.id = id;
         this.borrower = borrower;
         this.amount = amount;
@@ -40,5 +41,5 @@ public class loanRequest {
                 "borrower='" + borrower + '\'' +
                 ", amount=" + amount +
                 '}';
-    }                                                                                                                                                                                                                                 
+    }
 }
