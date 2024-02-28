@@ -32,4 +32,13 @@ public class loanRequest {
     public void setId(Long id) {
         this.id = id;
     }
+
+    // toString method
+    @Override
+    public String toString() {
+        return "LoanRequest{" +
+                "borrower='" + borrower + '\'' +
+                ", amount=" + amount +
+                '}';
+    }                                                                                                                                                                                                                                 
 }
