@@ -22,7 +22,7 @@ public LoanRequest createLoan(LoanRequest loanRequest){
 
         // send notification here
     RestTemplate restTemplate = new RestTemplate();
-    restTemplate.postForObject("",loanRequest, Void.class);
+    restTemplate.postForObject("http://localhost:8081/notify",loanRequest, Void.class);
     return loanSaved;
 
     }
