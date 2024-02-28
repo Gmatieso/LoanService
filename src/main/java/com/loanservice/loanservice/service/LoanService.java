@@ -7,13 +7,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-public class loanService {
+public class LoanService {
 
     @Autowired
     private final LoanRepository loanRepository;
 
 
-    public loanService(LoanRepository loanRepository) {
+    public LoanService(LoanRepository loanRepository) {
         this.loanRepository = loanRepository;
     }
 
