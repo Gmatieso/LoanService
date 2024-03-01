@@ -9,7 +9,7 @@ public class LoanRequest {
     public LoanRequest() {
     }
 
-    public LoanRequest(Long id, String borrower, double amount) {
+    public LoanRequest(Long id, String borrower, Integer amount) {
         this.id = id;
         this.borrower = borrower;
         this.amount = amount;
@@ -24,7 +24,7 @@ public class LoanRequest {
     private String borrower;
 
     @Column(name = "amount")
-    private double amount;
+    private Integer amount;
 
     public Long getId() {
         return id;
@@ -32,6 +32,22 @@ public class LoanRequest {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getBorrower() {
+        return borrower;
+    }
+
+    public void setBorrower(String borrower) {
+        this.borrower = borrower;
+    }
+
+    public Integer getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Integer amount) {
+        this.amount = amount;
     }
 
     // toString method
