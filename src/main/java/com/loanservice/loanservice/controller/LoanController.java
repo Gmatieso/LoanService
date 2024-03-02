@@ -27,4 +27,6 @@ public class LoanController {
         return ResponseEntity.status(HttpStatus.CREATED).body(newLoanRequest);
 
     }
+
 }
+

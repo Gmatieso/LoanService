@@ -8,8 +8,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class LoanService {
-
-    @Autowired
+        @Autowired
     private final LoanRepository loanRepository;
 
 
@@ -26,4 +25,6 @@ public LoanRequest createLoan(LoanRequest loanRequest){
     return loanSaved;
 
     }
+
 }
+
